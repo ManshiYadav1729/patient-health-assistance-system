@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="\static\css\predict.css">
+</head>
+<body>
+    <a href="/dashboard">🏠 Dashboard</a>
+   <h2> Select Symptoms</h2>
+<form action="/predict" method="post">
+
+    <label><input type="checkbox" name="symptoms" value="fever"> Fever</label><br>
+<label><input type="checkbox" name="symptoms" value="cough"> Cough</label><br>
+<label><input type="checkbox" name="symptoms" value="headache"> Headache</label><br>
+<label><input type="checkbox" name="symptoms" value="fatigue"> Fatigue</label><br>
+<label><input type="checkbox" name="symptoms" value="vomiting"> Vomiting</label><br>
+
+    <button type ="submit"> Predict</button>
+</form> 
+</body>
+</html>
+

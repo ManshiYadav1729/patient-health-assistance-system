@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical History</title>
+    <link rel="stylesheet" href="\static\css\history.css">
+</head>
+<body>
+    <a href="/dashboard">🏠 Dashboard</a>
+<h2>Prediction History</h2>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>ID</th>
+        <th>Patient ID</th>
+        <th>Symptoms</th>
+        <th>Disease</th>
+    </tr>
+
+    {% for row in records %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<br>
+<a href="/">Go Home</a>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="\static\css\register.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="title">Registation</div>
+        <form action ="/register" method="post">
+            <div class="user_details">
+                <div class="input_pox">
+                    <span class="datails">Full Name</span>
+                    <input type="text" placeholder="enter your name" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Your Age</span>
+                    <input type="integer" placeholder="enter your Age" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Email</span>
+                    <input type="text" placeholder="enter your Email" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Phone Number</span>
+                    <input type="text" placeholder="enter your Phone" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Password</span>
+                    <input type="text" placeholder="enter your Password" required>
+                </div>
+                <div class="input_pox">
+                    <span class="datails">Confirm Password</span>
+                    <input type="text" placeholder="Confirm your Password" required>
+                </div>
+            </div>
+            <div class="gender_details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender_title"> Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Mail</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Femail</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Perer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        <div class="logg">
+            <p>Already have an account?
+            <a href="/login">Login Here</a></p>
+        </div>
+
+        </form>
+    </div>
+     
+    </body>
+</html>
